@@ -18,6 +18,9 @@ jobs:
   test:
 
     runs-on: ubuntu-latest
+    
+    env:
+      BUNDLE_GEMFILE: ${{ github.workspace }}/papersite/ruby/Gemfile
 
     steps:
     - uses: actions/checkout@v3
