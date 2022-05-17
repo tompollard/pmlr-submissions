@@ -24,7 +24,7 @@ To create a new proceedings submission, please follow these steps:
 1. Commit and push the bib-file and [create a pull request](https://github.com/mlresearch/pmlr-submissions/compare) in this repository using the PR template. Do not add submissions (pdfs or supplementary material) to the PR, as these will end up in a separate repository. Please use a descriptive title for the PR.
 
    ```shell
-   > git commit -m "Add exmaple22 proceedings"
+   > git commit -m "Add example22 proceedings"
    > git push -u origin my-example-submission
    ```
 
