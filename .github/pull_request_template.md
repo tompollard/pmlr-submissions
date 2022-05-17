@@ -12,7 +12,7 @@ If you're unsure about any of these, don't hesitate to ask. We're here to help!
 - [ ] The bib-file does not contain any errors, the tests in this PR pass.
 - [ ] I have provided a link to the PDFs (and optional supplementary files).
 
-## Checklist Editors (@pmlr)
+## Checklist Editors (@mlresearch/pmlr)
 
 - [ ] The submission has been assigned to an editor @lawrennd @mrksr
 - [ ] The submission has been assigned a volume ID.

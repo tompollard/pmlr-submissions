@@ -11,10 +11,21 @@ To create a new proceedings submission, please follow these steps:
 1. Carefully read the [PMLR Proceedings Specification](https://proceedings.mlr.press/spec.html).
 1. Fork and clone this repository and create a local branch using
 
-    ```shell
-    > git checkout -b my-example-submission
-    ```
+   ```shell
+   > git checkout -b my-example-submission
+   ```
 
 1. Prepare the bib-file for your submission according to the specification. You can use [the template](https://github.com/mlresearch/pmlr-submissions/TEMPLATE.bib) provided in this repository as a starting point. It's fine if your submission is not complete yet at this point.
-1. Commit and push the bib-file and create a pull request in this repository using the PR template. Do not add submissions (pdfs or supplementary material) to the PR, as these will end up in a separate repository. Please use a descriptive title for the PR.
+
+   ```shell
+   > git add example22.bib
+   ```
+
+1. Commit and push the bib-file and [create a pull request](https://github.com/mlresearch/pmlr-submissions/compare) in this repository using the PR template. Do not add submissions (pdfs or supplementary material) to the PR, as these will end up in a separate repository. Please use a descriptive title for the PR.
+
+   ```shell
+   > git commit -m "Add exmaple22 proceedings"
+   > git push -u origin my-example-submission
+   ```
+
 1. Follow the instructions provided in the PR template.
