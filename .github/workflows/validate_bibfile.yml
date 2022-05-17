@@ -43,4 +43,4 @@ jobs:
     - name: Try to build the volume
       run: |
         cd v0
-        ruby ../papersite/ruby/create_volume.rb --cicd-mode -v 0 -b *.bib
+        bundle exec ../papersite/ruby/create_volume.rb --cicd-mode -v 0 -b *.bib
