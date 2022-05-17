@@ -1,11 +1,4 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-# This workflow will download a prebuilt Ruby version, install dependencies and run tests with Rake
-# For more information see: https://github.com/marketplace/actions/setup-ruby-jruby-and-truffleruby
-
-name: Ruby
+name: Validate Bibfile
 
 on:
   pull_request:
@@ -29,10 +22,10 @@ jobs:
         repository: "mlresearch/papersite"
         ref: "add-dummy-mode"
         path: "papersite"
-    - name: Find changed bibfile bibfile
+    - name: Find changed bibfile
       id: changed-files
       uses: tj-actions/changed-files@v20
-    - name: Prepare dummy volume
+    - name: Prepare a dummy volume
       run: |
         mkdir v0
         for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
@@ -43,7 +36,7 @@ jobs:
       with:
         working-directory: "papersite/ruby"
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - name: Try to build the volume
+    - name: Create the volume
       run: |
         cd v0
         bundle exec ../papersite/ruby/create_volume.rb --cicd-mode -v 0 -b *.bib
