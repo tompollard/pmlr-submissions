@@ -1,4 +1,5 @@
 # PMLR Proceedings Submissions
+![PMLR](./logo-pmlr.svg)
 
 This repository is used for bookkeeping for [PMLR proceedings](https://proceedings.mlr.press) submissions.
 We use PRs and bibfiles to collect the meta-data of your submission and assign a volume number.
