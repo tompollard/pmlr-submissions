@@ -57,3 +57,5 @@ Here is a list of things to check:
    - Are there syntax errors?
 1. Does the script print short-names of specific publications?
    - Is there an error around the last short-name that has been printed?
+
+If you're feeling adventurous, the underlying code can be found in [this repository](https://github.com/mlresearch/papersite/tree/master/ruby).
