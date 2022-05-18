@@ -29,3 +29,20 @@ To create a new proceedings submission, please follow these steps:
    ```
 
 1. Follow the instructions provided in the PR template.
+
+## Hints for Debugging your Bibfile
+
+If the validation job fails, our tooling was not able to correctly parse your bibfile according to the specification.
+You can check the output of the job for some pointers as to where parsing failed, but the errors provided are not the best.
+Here is a list of things to check:
+
+1. Is there no information from the bibfile in the logs?
+   - Is the bibfile present?
+   - Does it have the correct name?
+   - Are there fundamental syntax-errors in the file?
+1. Does the error show info from the main `@Proceedings`-entry?
+   - Are there fields missing?
+   - Does the bibfile have both a `volume` and `published` entry, even if it has not yet been set correctly by the editors?
+   - Are there syntax errors?
+1. Does the script print short-names of specific publications?
+   - Is there an error around the last short-name that has been printed?
